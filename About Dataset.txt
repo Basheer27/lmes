@@ -1,0 +1,23 @@
+About Dataset
+The Law School Admissions Council's (LSAC) National Bar Passage Study:
+A Law School Admissions dataset from the Law School Admissions Council (LSAC). From 1991 through 1997, LSAC tracked some twenty-seven thousand law students through law school, graduation, and sittings for bar exams. The result was the most comprehensive database that exists on the demography, experiences, and outcomes of a large cohort of aspiring lawyers. While the data has important limitations, it is a unique and very valuable source for studying a range of issues related to legal education.
+The dataset was originally collected for a study called 'LSAC National Longitudinal Bar Passage Study' by Linda Wightman in 1998.
+
+Ideas:
+Predict whether or not a student will pass the bar, based on their Law School Admission Test (LSAT) score and undergraduate GPA.
+Example analysis (copied here): Tensorflow Fairness Indicators example
+Check the above for bias - by race, gender, background
+Some important variables:
+dnn_bar_pass_prediction: The LSAT prediction from the DNN model.
+
+gender: Gender of the student.
+
+lsat: LSAT score received by the student.
+
+race: Race of the student.
+
+ugpa: A student's undergraduate GPA.
+
+pass_bar: - Ground truth label indicating whether or not the student eventually passed a bar.
+
+bar_passed - I added a boolean target column for convenience, of whether someone passed the bar at any point
